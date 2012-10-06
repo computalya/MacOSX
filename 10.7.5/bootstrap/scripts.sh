@@ -11,3 +11,4 @@ fi
 # main program
 mkdir /usr/local/scripts
 cp ../usr/local/scripts/* /usr/local/scripts
+echo "/usr/local/scripts" >> /etc/paths
