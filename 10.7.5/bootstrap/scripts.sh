@@ -9,8 +9,10 @@ if [ "$(id -u)" != "0" ]; then
 fi
 
 # main program
-mkdir /usr/local/scripts
-cp ../usr/local/scripts/* /usr/local/scripts
+if [ ! -d /usr/local/scripts ] ; then
+	mkdir /usr/local/scripts
+	cp ../usr/local/scripts/* /usr/local/scripts
+fi
 
 # if path does not exist...
 if ! [ `grep "/usr/local/scripts" /etc/paths &> /dev/null && echo $?` ] ; then
