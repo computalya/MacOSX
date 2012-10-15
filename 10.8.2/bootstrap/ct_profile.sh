@@ -19,3 +19,7 @@ fi
 # main program
 echo "${TEXT}" >> "/etc/profile"
 cp -R ../etc/profile.d/computalya/ /etc/profile.d/computalya
+
+echo "/etc/profile updated to upload /etc/profile.d/computalya/"
+
+exit 0
