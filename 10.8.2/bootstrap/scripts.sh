@@ -20,7 +20,7 @@ fi
 if ! [ `grep "/usr/local/scripts" /etc/paths &> /dev/null && echo $?` ] ; then
 	echo "/usr/local/scripts" >> /etc/paths
 
-	echo "/usr/local/scripts added to /etc/paths""
+	echo "/usr/local/scripts added to /etc/paths"
 fi
 
 exit 0
