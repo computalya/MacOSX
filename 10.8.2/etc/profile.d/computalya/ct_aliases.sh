@@ -4,6 +4,7 @@ alias l="ls -l"
 alias lsd="ls -l | grep ^d"
 #alias ls="ls --color=auto"
 alias h="history"
+alias hn="history | cut -c 8-"
 # rails aliases
 alias bi="bundle install"
 alias bil="bundle install --local"
